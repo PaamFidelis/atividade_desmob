@@ -4,7 +4,7 @@
     android:id="@+id/activity_a"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:padding="@dimen/espacamento_activity"
     android:background="@color/dark_blue"
     android:orientation="vertical"
     tools:context="br.usjt.ads.desmob.atividades.ActivityA">
@@ -13,15 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/activity_a_label"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         android:textSize="@dimen/font_large"
         android:textColor="@color/light_blue"
-        android:paddingBottom="16dp"/>
+        android:paddingBottom="@dimen/espacamento_titulo"/>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/espacamento_titulo">
 
         <Button
             android:id="@+id/btn_start_b"
@@ -54,15 +57,19 @@
             android:layout_toRightOf="@id/btn_finish_a"
             android:onClick="startDialog"/>
     </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/font_medium"
         android:text="@string/lifecycle_method_list"
-        android:textColor="@color/light_blue" />
+        android:textColor="@color/light_blue"
+        android:paddingBottom="@dimen/espacamento_titulo"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="160dp">
+
         <TextView
             android:id="@+id/status_view_a"
             android:layout_width="match_parent"
@@ -78,13 +85,16 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/font_medium"
         android:text="@string/activity_status"
-        android:textColor="@color/light_blue" />
+        android:textStyle="bold"
+        android:textColor="@color/light_blue"
+        android:padding="@dimen/status_activity"/>
+
     <TextView
         android:id="@+id/status_view_all_a"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
         android:textColor="@color/black"
-        android:padding="4dp"
+        android:padding="@dimen/status_activity"
         android:typeface="monospace"/>
 </LinearLayout>

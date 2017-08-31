@@ -9,6 +9,9 @@ public class DialogActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /**
+        * Remover a barra de título do diálogo
+        */
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_dialog);
     }

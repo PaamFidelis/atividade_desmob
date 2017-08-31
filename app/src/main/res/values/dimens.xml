@@ -3,7 +3,12 @@
     <dimen name="font_large">44sp</dimen>
     <dimen name="font_medium">24sp</dimen>
     <dimen name="font_small">10sp</dimen>
+
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="espacamento_activity">8dp</dimen>
+    <dimen name="espacamento_titulo">10dp</dimen>
+    <dimen name="status_activity">4dp</dimen>
 
 </resources>
